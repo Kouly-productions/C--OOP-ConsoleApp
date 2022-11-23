@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eliko\\Downloads\\OOPOne\\OOPOne\\OOPOne.csproj": {}
+    "C:\\Users\\eliko\\source\\repos\\OOPOne\\OOPOne\\OOPOne.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eliko\\Downloads\\OOPOne\\OOPOne\\OOPOne.csproj": {
+    "C:\\Users\\eliko\\source\\repos\\OOPOne\\OOPOne\\OOPOne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliko\\Downloads\\OOPOne\\OOPOne\\OOPOne.csproj",
+        "projectUniqueName": "C:\\Users\\eliko\\source\\repos\\OOPOne\\OOPOne\\OOPOne.csproj",
         "projectName": "OOPOne",
-        "projectPath": "C:\\Users\\eliko\\Downloads\\OOPOne\\OOPOne\\OOPOne.csproj",
+        "projectPath": "C:\\Users\\eliko\\source\\repos\\OOPOne\\OOPOne\\OOPOne.csproj",
         "packagesPath": "C:\\Users\\eliko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliko\\Downloads\\OOPOne\\OOPOne\\obj\\",
+        "outputPath": "C:\\Users\\eliko\\source\\repos\\OOPOne\\OOPOne\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eliko\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,9 +11,9 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Student Varian = new Student(2, "Varian", "Wrynn", new DateTime(1984, 1, 11), 0);
             Student Anduin = new Student(3, "Anduin", "Wrynn", new DateTime(1991, 7, 15), 0);
 
-            Teacher mie = new Teacher("Dansk", "Mie", "Miesen", new DateTime(1971, 4, 12), 0);
-            Teacher Freddy = new Teacher("Matematik", "Freddy", "Fazbear", new DateTime(1971, 4, 12), 0);
-            Teacher Niels = new Teacher("Programmering", "Niels", "Olesen", new DateTime(1971, 4, 12), 0);
+            Teacher mie = new Teacher();
+            Teacher Freddy = new Teacher();
+            Teacher Niels = new Teacher();
 
             Course Programmering = new Course("Programmering", Niels);
             Course Matematik = new Course("Matematik", Freddy);
@@ -21,32 +21,16 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             //Console.WriteLine($"{Alex.Name} {Alex.LastName} {Alex.Age}");
 
-            List<Enrollment> tilmeldingslist = new List<Enrollment>()
-            {
-            new (Alex, Programmering),
-            new (Alex, Matematik),
-            new (Alex, Dansk),
-
-            new (Varian, Programmering),
-            new (Varian, Matematik),
-            new (Varian, Dansk),
-
-            new (Anduin, Programmering),
-            new (Anduin, Matematik),
-            new (Anduin, Dansk)
-            };
-
-            /*
-            tilmeldingslist.Add(new Enrollment(Alex, Programmering));
-            tilmeldingslist.Add(new Enrollment(Alex, Matematik));
-            tilmeldingslist.Add(new Enrollment(Alex, Dansk));
-            */
+            List<Enrollment> tilmeldingslist = new List<Enrollment>();
+            Enrollment.Add enroll1 = new Enrollment(Alex, Programmering);
+            Enrollment.Add enroll2 = new Enrollment(Alex, Matematik);
+            Enrollment.Add enroll3 = new Enrollment(Alex, Dansk);
 
             foreach (var items in tilmeldingslist)
             {
-                Console.WriteLine($"Fornavn: {items.CourseInfo.TeacherInfo.Name} Efternavn: {items.CourseInfo.TeacherInfo.LastName} Fag: {items.CourseInfo.CourseName} Lærer: {items.CourseInfo.TeacherInfo.Name} {items.CourseInfo.TeacherInfo.LastName}");
+                Console.WriteLine(items);
             }
-            Console.ReadLine();
+
         }
     }
 }

@@ -8,13 +8,13 @@ namespace OOPOne
 {
     public class Course
     {
-		private string _CourseName;
-
-		public Course(string name, Teacher teacher)
+		public Course(string courseName, Teacher teacherInfo)
 		{
-            CourseName = name;
-            TeacherInfo = teacher;
+			CourseName = courseName;
+            TeacherInfo = teacherInfo;
 		}
+
+		private string _CourseName;
 
 		public string CourseName
 		{
@@ -24,12 +24,10 @@ namespace OOPOne
 
 		private Teacher _TeacherInfo;
 
-		public  Teacher TeacherInfo
+		public Teacher TeacherInfo
 		{
 			get { return _TeacherInfo; }
 			set { _TeacherInfo = value; }
 		}
-
-
 	}
 }
